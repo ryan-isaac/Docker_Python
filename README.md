@@ -1,5 +1,5 @@
 # Docker_Python
-This docker file runs a python code -v 3.8 to download 2 datasets from the web, then process them to generate printed statistics and one excel file with data divided by year for the last 3 years. The URL link for the data could change as it's hosted on Google drive. If you receive an error related to downloading the data and the url, you may need to contact me to update the links inside the '.py' python file.
+This docker file runs a python code -v 3.8 to download 2 datasets from the web, then process them to generate printed statistics and one excel file with data divided by year for the last 3 years. The URL link for the data could change, as it is hosted on Google drive but can be manually retrieved from https://climate.weather.gc.ca. If you receive an error related to downloading the data and the URL, you may need to contact me to update the links inside the '.py' python file.
 
 ## Files
 - Dockerfile
@@ -10,7 +10,7 @@ This docker file runs a python code -v 3.8 to download 2 datasets from the web, 
  
 ## Instructions
 This python program prints a set of statistics and saves one Excel file named weather_data.xlsx.
-This Docker file must be mounted in order to copy the saved file to the host machine. Please mount your desired output directory to the Excel file path inside the container: /usr/src/app/output/ when running the container.
+This Docker file must be mounted at running time to copy the saved file to the host machine. Please mount your desired output directory to the Excel file path inside the container: /usr/src/app/output/ when running the container.
 
 Please follow below example code to get the intended output from the program.
 
@@ -30,11 +30,9 @@ You can save the built image and run it somewhere else directly from a compresse
 $ docker save ryan/python-docker:1 | gzip > isaac_docker_python.tar.gz
 
 - Unzip and load isaac_docker_python.tar.gz
-To load this file in a linux environment, make sure you have docker installed and run the following
+To load this file in a Linux environment, make sure you have docker installed and run the following
 
 $ docker load < isaac_docker_python.tar.gz 
-
-
 
 
 
