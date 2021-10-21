@@ -7,12 +7,12 @@ This docker file runs a python code -v 3.8 to download 2 datasets from the web, 
 - weather_data.py
 - readme.txt
 You can build the image from the above or load the image directly from the compressed .tar.gz file
-- isaac_python-quiz.tar.gz
+- isaac_python.tar.gz
 
 ## Instructions
 Please follow below instructions to get the intended output from the program
 
-- 1) Unzip isaac_python-quiz.tar.gz
+- 1) Unzip isaac_python.tar.gz
 To load this file in a linux environment, make sure you have docker installed and run the following
 
 docker load < isaac_python-quiz.tar.gz 
