@@ -6,6 +6,7 @@ This docker file runs a python code -v 3.8 to download 2 datasets from the web, 
 - requirements.txt
 - weather_data.py
 - readme.txt
+- weather_data.xlsx <= sample output file 
 You can build the image from the above or load the image directly from the compressed .tar.gz file
 - isaac_docker_python.tar.gz
 
