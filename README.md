@@ -6,6 +6,7 @@ This docker file runs a python code -v 3.8 to download 2 datasets from the web, 
 - requirements.txt
 - weather_data.py
 - readme.txt
+- Technical_Documentation =< metadata for reference if needed
 - weather_data.xlsx <= sample output file
  
 ## Instructions
