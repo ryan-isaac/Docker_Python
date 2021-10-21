@@ -7,18 +7,18 @@ This docker file runs a python code -v 3.8 to download 2 datasets from the web, 
 - weather_data.py
 - readme.txt
 You can build the image from the above or load the image directly from the compressed .tar.gz file
-- isaac_python.tar.gz
+- isaac_docker_python.tar.gz
 
 ## Instructions
 Please follow below instructions to get the intended output from the program
 
-- 1) Unzip isaac_python.tar.gz
+- 1) Unzip isaac_docker_python.tar.gz
 To load this file in a linux environment, make sure you have docker installed and run the following
 
-docker load < isaac_python-quiz.tar.gz 
+docker load < isaac_docker_python.tar.gz 
 
 - 2) Run Docker
-This python program prints a set of statistics and saves one Excel file named python_quiz_output.xlsx.
+This python program prints a set of statistics and saves one Excel file named weather_data.xlsx.
 This Docker file must be mounted in order to extract the generated file to the host machine. Please mount your desired output directory to the Excel file path inside the container: /usr/src/app/output/ when running the container.
 
 Example:
