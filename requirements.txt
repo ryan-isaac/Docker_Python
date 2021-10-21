@@ -1,0 +1,10 @@
+# python requirements to run the quiz codes
+
+pandas  \
+
+datetime \
+
+numpy \
+
+XlsxWriter
+
